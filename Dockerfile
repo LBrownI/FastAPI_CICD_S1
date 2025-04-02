@@ -10,7 +10,7 @@ COPY app app/
 
 # Instala Poetry y las dependencias del proyecto
 RUN pip install --no-cache-dir poetry && \
-    poetry install --no-dev
+    poetry install
 
 # Expone el puerto 8000
 EXPOSE 8000
