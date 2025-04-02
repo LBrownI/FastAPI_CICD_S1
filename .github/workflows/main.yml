@@ -26,10 +26,12 @@ jobs:
           poetry install
       
       - name: Run Linter (flake8)
-        run: flake8 app
+        run: |
+          pip install flake8
+          flake8 ./app
 
       - name: Run Tests (pytest)
-        run: pytest
+        run: pytest ./app
 
   build-and-push:
     needs: test-and-lint
