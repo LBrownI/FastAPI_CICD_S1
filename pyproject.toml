@@ -1,28 +1,25 @@
-[project]
+[tool.poetry]
 name = "fastapi-app"
 version = "0.1.0"
 description = "FastAPI for GitHub Actions testing"
 authors = [
-    {name = "Dantexito",email = "dante.quezada.p@gmail.com"},
-    {name = "LBrownI", email = "lucasbrowngd@gmail.com"}
+    "Dantexito <dante.quezada.p@gmail.com>",
+    "LBrownI <lucasbrowngd@gmail.com>"
 ]
-
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "fastapi (>=0.115.12,<0.116.0)",
-    "uvicorn (>=0.34.0,<0.35.0)",
-    "httpx (>=0.28.1,<0.29.0)"
-]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+fastapi = ">=0.115.12,<0.116.0"
+uvicorn = ">=0.34.0,<0.35.0"
+httpx = ">=0.28.1,<0.29.0"
+
+[[tool.poetry.packages]]
+include = "app"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry]
-packages = [
-  { include = "app" }
-]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
