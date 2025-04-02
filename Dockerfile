@@ -8,9 +8,9 @@ WORKDIR /app
 COPY pyproject.toml poetry.lock ./
 COPY app app/
 
-# Instala Poetry y las dependencias del proyecto
-RUN pip install --no-cache-dir poetry && \
-    poetry install
+# Instala dependencias del proyecto
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 # Expone el puerto 8000
 EXPOSE 8000
