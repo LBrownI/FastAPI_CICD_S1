@@ -1,4 +1,113 @@
 # FastAPI_CICD_S1
 
+[![CI/CD Pipeline](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/main.yml/badge.svg)](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/main.yml)
 
-[![.github/workflows/tests.yml](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/tests.yml/badge.svg)](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/tests.yml)
+[![Docker Image](https://img.shields.io/docker/v/lbrowni/fastapi-app?label=Docker%20Image&sort=semver)](https://https://hub.docker.com/r/lbrowni/fastapi-app)
+[![Docker Size](https://img.shields.io/docker/image-size/lbrowni/fastapi-app/latest)](https://hub.docker.com/r/lbrowni/fastapi-app)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lbrowni/fastapi-app)](https://hub.docker.com/r/lbrowni/fastapi-app)
+
+[![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
+[![FastAPI Version](https://img.shields.io/badge/FastAPI-0.115.12-blue.svg)](https://fastapi.tiangolo.com/)
+[![Poetry Version](https://img.shields.io/badge/Poetry-2.1.2-blue.svg)](https://python-poetry.org/)
+[![Pytest Version](https://img.shields.io/badge/Pytest-8.3.5-blue.svg)](https://docs.pytest.org/en/stable/)
+
+
+## Description
+FastAPI_CICD_S1 is a web application developed with FastAPI that serves as an example for continuous integration and continuous delivery (CI/CD) using GitHub Actions. The application includes a couple of basic endpoints to demonstrate API functionality, automated testing, and deployment using Docker.
+
+## Features
+- Simple endpoints:
+
+    - GET /: Returns a greeting message.
+
+    - GET /time: Returns the current server date and time in the format *```YYYY-MM-DD HH:MM:SS```*.
+
+- **Dependency Management**:
+
+    Poetry is used to manage dependencies and project configuration.
+    A ```requirements.txt``` file is also included for compatibility with pip-based environments.
+
+- **Testing**:
+
+  Tests are implemented using pytest and validate endpoints (e.g., the date format in /time).
+
+- **CI/CD**:
+  
+    Integration with GitHub Actions automates test execution, code linting with flake8, and Docker image build/push.
+
+- **Containerization**:
+
+    A Dockerfile is included to build the application image, making deployment in containers easier.
+
+# Requirements
+- Python: Version 3.12 or higher.
+
+- Poetry: For dependency management.
+
+- Docker: (Optional) To run the application in a container.
+
+- Pip: If you prefer to use the requirements.txt file to install dependencies.
+
+# Installation
+1. Clone the repository:
+```
+git clone https://github.com/your_username/FastAPI_CICD_S1.git
+cd FastAPI_CICD_S1
+```
+
+2. Install dependencies:
+```
+poetry install
+```
+
+# Usage
+## Run the Application
+Start the app using uvicorn:
+```
+uvicorn app.main:app --reload
+```
+The app will run at http://0.0.0.0:8000
+
+# Available Endpoints
+- **GET /**: Returns:
+  ```
+    {
+        "Hello": "World"
+    }
+    ```
+- **GET /time**: Returns the current date and time:
+  ```
+    "current_time": "2023-10-01 12:00:00"
+    ```
+
+# Testing
+The project includes automated tests using pytest. To run the tests, use the following command:
+```
+poetry run pytest
+```
+
+# Linting
+The project uses flake8 for code linting. You can run linting with the following command:
+```
+flake8 ./app
+```
+
+# Continuous Integration and Continuous Delivery (CI/CD)
+The project includes a GitHub Actions workflow that performs the following tasks:
+- **Checkout:** Pulls the code from the repository.
+- **Python Setup:** Configures the Python environment (3.12).
+- **Poetry Installation and Dependency Setup**
+- **Linting Execution:** Runs flake8 to analyze the code.
+- **Test Execution:** Runs pytest to validate the application functionality.
+- **Docker Build:** Once tests and linting pass, builds the Docker image of the application and pushes it to Docker Hub (requires configuring ```DOCKERHUB_USERNAME``` and ```DOCKERHUB_TOKEN```).
+
+# Containerization with Docker
+The included ```Dockerfile``` allows building an image of the application. To build and run the image, use the following commands:
+1. Build the image:
+```
+docker build -t fastapi-app .
+```
+2. Run the container:
+```
+docker run -d -p 8000:8000 fastapi-app
+```
