@@ -2,7 +2,7 @@
 
 [![CI/CD Pipeline](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/main.yml/badge.svg)](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/main.yml)
 
-[![Docker Image](https://img.shields.io/docker/v/lbrowni/fastapi-app?label=Docker%20Image&sort=semver)](https://https://hub.docker.com/r/lbrowni/fastapi-app)
+[![Docker Image](https://img.shields.io/docker/v/lbrowni/fastapi-app?label=Docker%20Image&sort=semver)](https://hub.docker.com/r/lbrowni/fastapi-app)
 [![Docker Size](https://img.shields.io/docker/image-size/lbrowni/fastapi-app/latest)](https://hub.docker.com/r/lbrowni/fastapi-app)
 [![Docker Pulls](https://img.shields.io/docker/pulls/lbrowni/fastapi-app)](https://hub.docker.com/r/lbrowni/fastapi-app)
 
@@ -51,7 +51,7 @@ FastAPI_CICD_S1 is a web application developed with FastAPI that serves as an ex
 # Installation
 1. Clone the repository:
 ```
-git clone https://github.com/your_username/FastAPI_CICD_S1.git
+git clone https://github.com/LBrownI/FastAPI_CICD_S1.git
 cd FastAPI_CICD_S1
 ```
 
