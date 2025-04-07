@@ -6,10 +6,10 @@
 [![Docker Size](https://img.shields.io/docker/image-size/lbrowni/fastapi-app/latest)](https://hub.docker.com/r/lbrowni/fastapi-app)
 [![Docker Pulls](https://img.shields.io/docker/pulls/lbrowni/fastapi-app)](https://hub.docker.com/r/lbrowni/fastapi-app)
 
-[![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
-[![FastAPI Version](https://img.shields.io/badge/FastAPI-0.115.12-blue.svg)](https://fastapi.tiangolo.com/)
-[![Poetry Version](https://img.shields.io/badge/Poetry-2.1.2-blue.svg)](https://python-poetry.org/)
-[![Pytest Version](https://img.shields.io/badge/Pytest-8.3.5-blue.svg)](https://docs.pytest.org/en/stable/)
+[![Python Version](https://img.shields.io/badge/python-3.12-green.svg)](https://www.python.org/downloads/release/python-3120/)
+[![FastAPI Version](https://img.shields.io/badge/FastAPI-0.115.12-darkgreen.svg)](https://fastapi.tiangolo.com/)
+[![Poetry Version](https://img.shields.io/badge/Poetry-2.1.2-darkblue.svg)](https://python-poetry.org/)
+[![Pytest Version](https://img.shields.io/badge/Pytest-8.3.5-lightgreen.svg)](https://docs.pytest.org/en/stable/)
 
 
 ## Description
