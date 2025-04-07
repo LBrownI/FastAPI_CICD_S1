@@ -86,12 +86,6 @@ The project includes automated tests using pytest. To run the tests, use the fol
 poetry run pytest
 ```
 
-# Linting
-The project uses flake8 for code linting. You can run linting with the following command:
-```
-flake8 ./app
-```
-
 # Continuous Integration and Continuous Delivery (CI/CD)
 The project includes a GitHub Actions workflow that performs the following tasks:
 - **Checkout:** Pulls the code from the repository.
