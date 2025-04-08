@@ -1,6 +1,7 @@
 # FastAPI_CICD_S1
 
-[![CI/CD Pipeline](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/main.yml/badge.svg)](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/main.yml)
+[![Build and Push Docker Image](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/build-and-push.yml/badge.svg)](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/build-and-push.yml) 
+[![Test and Lint](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/test-and-lint.yml/badge.svg)](https://github.com/LBrownI/FastAPI_CICD_S1/actions/workflows/test-and-lint.yml)
 
 [![Docker Image](https://img.shields.io/docker/v/lbrowni/fastapi-app?label=Docker%20Image&sort=semver)](https://hub.docker.com/r/lbrowni/fastapi-app)
 [![Docker Size](https://img.shields.io/docker/image-size/lbrowni/fastapi-app/latest)](https://hub.docker.com/r/lbrowni/fastapi-app)
