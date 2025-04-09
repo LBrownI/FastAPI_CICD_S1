@@ -145,3 +145,4 @@ docker run -d -p 8000:8000 fastapi-app
 ## Extra info
 
 - DOCKERHUB REPOSITORY: you can access the repo at https://hub.docker.com/r/lbrowni/fastapi-app or by searching the repository on dockerhub with lbrowni/fastapi-app.
+- GITHUB REPOSITORY: if you are reading this from a local folder and would like to see how the banners look check out: https://github.com/LBrownI/FastAPI_CICD_S1
